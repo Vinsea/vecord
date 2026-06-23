@@ -137,6 +137,17 @@ export function FeedbackDialog() {
 						<ExternalLink className="h-3.5 w-3.5 text-muted-foreground/70" />
 					</Button>
 				</div>
+				<p className="text-center text-[11px] text-muted-foreground/50">
+					Based on{" "}
+					<a
+						href="https://www.recordly.dev"
+						onClick={(e) => { e.preventDefault(); void openExternalLink("https://www.recordly.dev", ""); }}
+						className="underline underline-offset-2 hover:text-muted-foreground/80 cursor-pointer"
+					>
+						Recordly
+					</a>
+					{" "}· AGPL 3.0
+				</p>
 			</DialogContent>
 		</Dialog>
 	);
